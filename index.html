@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a,
+        button {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            display: block;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+            padding: 0;
+            margin: 0;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(225, 100%, 94%);
+            background-image: url('pattern-background-desktop.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        p {
+            color: hsl(224, 23%, 55%);
+            font-weight: 500;
+        }
+
+        h1,
+        h4 {
+            font-weight: 900;
+            color: hsl(223, 47%, 23%);
+        }
+
+        .card {
+            border-radius: 20px;
+            background-color: #fff;
+            width: 380px;
+            text-align: center;
+        }
+
+        .card-img {
+            width: inherit;
+        }
+
+        .card-img img {
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card-texts {
+            padding: 0 40px 30px;
+        }
+
+        .plan-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: hsl(225, 100%, 98%);
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        .plan {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .plan p,
+        .plan h4 {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .music-icon {
+            margin-right: 1rem;
+        }
+
+.btn {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 0;
+    font-size: .9rem;
+}
+
+.pay-btn {
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    margin-top: 2rem;
+    box-shadow: 0 25px 18px rgba(150, 180, 214, 0.3);
+}
+
+.pay-btn:hover{
+    background: rgba(67, 114, 241, 0.7);
+}
+
+.cancel-btn {
+    padding: .5rem 0;
+margin-top: 1.5rem;
+    background: transparent;
+    font-size: .999rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+a:hover{
+    color: rgba(67, 114, 241, 0.9);
+    text-decoration: none;
+}
+
+        input {
+            color: hsl(225, 100%, 94%) hsl(245, 75%, 52%) hsl(225, 100%, 98%) hsl(224, 23%, 55%) 
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="card">
+            <div class="card-img">
+                <img src="illustration-hero.svg" alt="woman listening to music on earphones">
+            </div>
+            <div class="card-texts">
+                <h1>Order Summary</h1>
+                <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+                </p>
+                <div class="plan-wrapper">
+                    <div class="plan">
+                        <div class="music-icon">
+                            <img src="icon-music.svg" alt="music icon">
+                        </div>
+                        <div class="plan-text">
+                            <h4>Annual Plan</h4>
+                            <p>$59.99/year</p>
+                        </div>
+                    </div>
+                    <a href="#">Change</a>
+                </div>
+                <button class="btn pay-btn">Proceed to Payment</button>
+                <button class="btn cancel-btn">Cancel Order</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
